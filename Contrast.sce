@@ -1,0 +1,16 @@
+xdel(winsid())
+a=imread("C:\Users\Shreyas\Desktop\Scilab\a53816ef-de39-4ff9-b164-5e9105ceccb3.jfif")
+figure(1)
+imshow(a)
+title("Original image")
+figure(2)
+b=double(a)*0.5
+b=int8(b)
+imshow(b)
+title("Contrast increased")
+figure(3)
+c=double(a)*0.5
+c=uint8(c)
+imshow(c)
+title("Contrast decreased")
+imwrite(c,'C:\Users\Shreyas\Desktop\Scilab\contrast_a53816ef-de39-4ff9-b164-5e9105ceccb3.jpg')
